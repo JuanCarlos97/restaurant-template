@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "restaurant-template-4b129": {
+      "hosting": {
+        "mdb-angular-free": [
+          "restaurant-template-4b129"
+        ]
+      }
+    }
+  }
+}

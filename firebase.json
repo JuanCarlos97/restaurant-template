@@ -1,0 +1,19 @@
+{
+  "hosting": [
+    {
+      "target": "mdb-angular-free",
+      "public": "dist/mdb-angular-free",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  ]
+}

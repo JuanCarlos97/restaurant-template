@@ -1,0 +1,23 @@
+<div class="contenedor">
+    <div class="form">
+        <form (ngSubmit)="login( fa )" #fa="ngForm" class="login100-form validate-form flex-sb flex-w">
+            <img src="../../../assets/img/logo.png" class="avatar animated rotateIn" alt="Avatar Image">
+            <h2>Login</h2>
+            <div class="input">
+                <div class="inputBox">
+                    <span *ngIf="fa.submitted && fa.controls['email'].errors" class="text-danger animated fadeIn">Email obligatorio</span>
+                    <label>Email</label>
+                    <input type="text" name="email" [(ngModel)]="usuario.email" required placeholder="example@xyz.com">
+                </div>
+                <div class="inputBox">
+                    <span *ngIf="fa.submitted && fa.controls['password'].errors" class="text-danger animated fadeIn">Contraseña obligatoria</span>
+                    <label>Password</label>
+                    <input type="password" name="password" [(ngModel)]="usuario.password" required>
+                </div>
+                <div class="inputBox">
+                    <input type="submit" value="Acceder">
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,29 @@
+<div class="contenedor">
+    <div class="form">
+        <form (ngSubmit)="onSubmit( f )" #f="ngForm" class="formulario login100-form validate-form flex-sb flex-w">
+            <img src="../../../assets/img/logo.png" class="avatar animated rotateIn" alt="Avatar Image">
+            <h2>Nueva cuenta</h2>
+            <div class="input">
+                <div class="inputBox">
+                    <span *ngIf="f.submitted && f.controls['nombre'].errors" class="text-danger animated fadeIn">Nombre completo obligatorio</span>
+                    <label>Nombre</label>
+                    <input type="text" name="nombre" [(ngModel)]="usuario.nombre" required minlength="2" placeholder="Nombre Completo">
+                </div>
+                <div class="inputBox">
+                    <span *ngIf="f.submitted && f.controls['email'].errors" class="text-danger animated fadeIn">Email obligatorio</span>
+                    <label>Email</label>
+                    <input type="text" name="email" [(ngModel)]="usuario.email" required email placeholder="example@xyz.com">
+                </div>
+                <div class="inputBox">
+                    <span *ngIf="f.submitted && f.controls['password'].errors" class="text-danger animated fadeIn">Minimo 6 caracteres</span>
+                    <label>Password</label>
+                    <input type="password" name="password" [(ngModel)]="usuario.password" required minlength="6">
+                </div>
+                <div class="inputBox">
+                    <input type="submit" value="Registrar">
+                </div>
+            </div>
+            <p class="forget">¿Ya tienes una cuenta?<a routerLink="/login" class="link"> Iniciar Sesion</a></p>
+        </form>
+    </div>
+</div>

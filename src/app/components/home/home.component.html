@@ -1,6 +1,25 @@
-<div class="row">
-    <div class="col text-center">
-        <button routerLink="/pedido/nuevo" class="btn btn-info">
-  <i class="fa fa-plus"></i>
-  Agregar
-</button>
+<div class="container-portada animated fadeIn">
+    <div class="capa-gradient"></div>
+    <div class="container-details flex-center">
+        <div class="row details animated fadeInDown">
+            <h2>¿Se te antoja?</h2>
+        </div>
+    </div>
+</div>
+
+<section id="bienvenidos">
+    <h2>BIENVENIDOS A NUESTRO RESTAURANTE</h2>
+    <p>"En nuestra cocina pasan cosas mágicas"</p>
+</section>
+<section id="menu">
+    <div class="contenedor">
+        <a routerLink="/pedido/nuevo">
+            <div>
+                <img src="../../../assets/img/pedidos.png">
+                <h2> Carta </h2>
+            </div>
+        </a>
+    </div>
+</section>
+
+<app-footer></app-footer>

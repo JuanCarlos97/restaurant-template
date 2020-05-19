@@ -1,17 +1,33 @@
-<div class="container mt-3">
-    <!-- Card -->
-    <div class="card card-image" style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
-
-        <!-- Content -->
-        <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
-            <div>
-                <h5 class="pink-text"><i class="fas fa-chart-pie"></i> Pedidos </h5>
-                <h3 class="card-title pt-2"><strong>This is the card title</strong></h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugiat, laboriosam, voluptatem, optio vero odio nam sit officia accusamus minus error nisi architecto nulla ipsum dignissimos. Odit sed qui, dolorum!.</p>
-                <a [routerLink]="['/dashboard/pedidos']" class="btn btn-pink text-white"><i class="fas fa-clone left"></i> Acceder</a>
-            </div>
+<div class="container-portada animated fadeIn">
+    <div class="capa-gradient"></div>
+    <div class="container-details flex-center">
+        <div class="row details animated fadeInDown">
+            <h2>Cocina</h2>
         </div>
-
     </div>
-    <!-- Card -->
 </div>
+<br>
+<section id="menu">
+    <h5>Clic en la opción deseada</h5>
+    <div class="contenedor">
+        <a routerLink="/dashboard/pedidos">
+            <div>
+                <img src="../../../assets/img/pedidos.png">
+                <h2> Pedidos </h2>
+            </div>
+        </a>
+        <a routerLink="/dashboard/platillos">
+            <div>
+                <img src="../../../assets/img/platillos.png">
+                <h2> Platillos </h2>
+            </div>
+        </a>
+        <a routerLink="/registro">
+            <div>
+                <img src="../../../assets/img/usuarios.png">
+                <br>
+                <h2> Nuevo usuario </h2>
+            </div>
+        </a>
+    </div>
+</section>

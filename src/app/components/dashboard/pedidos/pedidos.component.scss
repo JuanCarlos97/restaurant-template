@@ -1,0 +1,71 @@
+body {
+    padding: 30px;
+}
+
+.margenboton {
+    margin: 0;
+    ;
+}
+
+.centrado {
+    text-align: center;
+}
+
+.titulo {
+    font-family: 'Ultra', serif;
+    font-size: 40px;
+}
+
+.tabla {
+    background-color: rgba(100, 148, 237, 0.185);
+}
+
+tbody tr th {
+    font-size: 30px;
+    font-family: 'Suez One', serif;
+    color: black;
+}
+
+tbody tr td {
+    font-size: 30px;
+    font-family: 'Suez One', serif;
+    color: black;
+}
+
+.black tr th {
+    font-family: 'Bree Serif', serif;
+    color: white;
+    font-size: 40px;
+}
+
+@media (max-width: 880px) {
+    .black tr th {
+        font-size: 20px;
+    }
+    tbody tr th {
+        font-size: 20px;
+        font-family: 'Suez One', serif;
+        color: black;
+    }
+    tbody tr td {
+        font-size: 20px;
+        font-family: 'Suez One', serif;
+        color: black;
+    }
+}
+
+@media (max-width: 660px) {
+    .black tr th {
+        font-size: 10px;
+    }
+    tbody tr th {
+        font-size: 12px;
+        font-family: 'Suez One', serif;
+        color: black;
+    }
+    tbody tr td {
+        font-size: 12px;
+        font-family: 'Suez One', serif;
+        color: black;
+    }
+}
